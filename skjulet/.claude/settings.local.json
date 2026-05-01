@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/Marius/Documents/GitHub/skjulet2026/_resources/FINAL_HERO.webp\" \"C:/Users/Marius/Documents/GitHub/skjulet2026/skjulet/public/FINAL_HERO.webp\")",
+      "Bash(cp \"C:/Users/Marius/Documents/GitHub/skjulet2026/_resources/skjulet_logo_hvit.svg\" \"C:/Users/Marius/Documents/GitHub/skjulet2026/skjulet/public/skjulet_logo_hvit.svg\")",
+      "Bash(curl -s \"https://www.googleapis.com/youtube/v3/search?key=AIzaSyDeaNbAvJOpsRdKptbZxTLI_P9A3KknpBE&channelId=UC7D-jFfJqu3LHvReXgQ8o-g&part=snippet&order=date&type=video&maxResults=6\")"
+    ]
+  }
+}

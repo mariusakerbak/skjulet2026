@@ -141,3 +141,9 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# custom files
+_discard/
+_discard-*
+_discard/*.*
+.env.local
