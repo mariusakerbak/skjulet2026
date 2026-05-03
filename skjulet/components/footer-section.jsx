@@ -10,7 +10,7 @@ export function FooterSection() {
   }
 
   return (
-    <footer className="border-t border-secondary bg-background">
+    <footer className="border-t border-secondary bg-secondary">
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 lg:px-16">
         <div className="grid gap-12 md:grid-cols-3 md:gap-8">
           <div>
@@ -34,7 +34,7 @@ export function FooterSection() {
               Neste konsert
             </h3>
             {nextConcert ? (
-              <div className="bg-secondary p-6">
+              <div className="bg-background p-6">
                 <p className="mb-2 text-2xl font-bold text-primary">
                   {nextConcert.date}
                 </p>
@@ -53,13 +53,13 @@ export function FooterSection() {
           </div>
 
           <div>
-            <h3 className="mb-6 text-lg font-bold text-foreground">Finn oss</h3>
+            <h3 className="mb-6 text-lg font-bold text-foreground">Kontakt</h3>
             <p className="mb-4 text-foreground/50">
-              Vi er der du er — nesten.
+              For booking, spørsmål eller samarbeid, ta kontakt med oss på e-post eller følg oss på sosiale medier:
             </p>
             <a
               href="mailto:gutta@skjulet.no"
-              className="mb-6 inline-block text-primary transition-colors hover:text-foreground"
+              className="mb-6 transition-colors duration-300 ease-in-out inline-block w-full bg-background hover:bg-primary text-primary-background hover:text-primary-foreground text-xl text-center p-4 transition-colors hover:text-foreground"
             >
               gutta@skjulet.no
             </a>
