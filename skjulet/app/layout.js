@@ -8,9 +8,9 @@ const openSans = Open_Sans({
 })
 
 export const metadata = {
-  title: "Skjulet — Norwegian Storytelling",
+  title: "Skjulet — Norsk historiefortelling i musikkform.",
   description:
-    "Dark tales from the north. A Norwegian storytelling band weaving narratives through sound.",
+    "Skjulet har ikke rot i verdenshistorien - det er rot i verdenshistorien.",
 }
 
 export default function RootLayout({ children }) {

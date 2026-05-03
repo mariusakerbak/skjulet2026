@@ -6,9 +6,8 @@ import { useState } from "react"
 import { socialLinks } from "@/lib/social"
 
 const navItems = [
-  { href: "/#music", label: "Musikk" },
   { href: "/diskografi", label: "Diskografi" },
-  { href: "/#live", label: "Konserter" },
+  { href: "/om/skjulet", label: "Om Skjulet" },
 ]
 
 function SocialIcon({ href, label, path, className }) {
