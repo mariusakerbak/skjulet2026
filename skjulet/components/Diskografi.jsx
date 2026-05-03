@@ -30,9 +30,8 @@ export function Diskografi({ albums }) {
               className="flex flex-col items-start gap-10 md:flex-row md:gap-16"
             >
               {album.coverimage?.asset ? (
-                <div
-                  className="relative overflow-hidden border border-foreground/10 bg-secondary/40"
-                  style={{ height: "400px", width: "400px" }}
+                <figure
+                  className="relative overflow-hidden border border-foreground/10 bg-secondary/40 h-64 w-64 md:h-96 md:w-96"
                 >
                   <Image
                     src={urlFor(album.coverimage).width(640).height(640).auto("format").url()}
@@ -40,9 +39,9 @@ export function Diskografi({ albums }) {
                     fill
                     unoptimized
                     className="object-cover"
-                    sizes="400px"
+                    sizes="(min-width: 768px) 400px, 256px"
                   />
-                </div>
+                </figure>
               ) : (
                 <div
                   className="border border-foreground/10 bg-secondary/40"
