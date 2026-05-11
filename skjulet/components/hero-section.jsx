@@ -156,7 +156,7 @@ export function HeroSection() {
              Lytt nå
             </a>
             <a
-              href="https://kulturhuset.hoopla.no/"
+              href="https://kulturhuset.hoopla.no/event/634926803"
               className="inline-flex items-center justify-center border border-primary bg-primary px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Bestill billetter (Hoopla)
