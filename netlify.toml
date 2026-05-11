@@ -1,0 +1,12 @@
+[build]
+  base = "skjulet"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_PUBLIC_SANITY_PROJECT_ID = "uwxkrui6"
+  NEXT_PUBLIC_SANITY_DATASET = "skjulet2026"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
