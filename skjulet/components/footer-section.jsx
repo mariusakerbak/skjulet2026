@@ -1,12 +1,14 @@
 import { socialLinks } from "@/lib/social"
+import Link from "next/link"
 
 export function FooterSection() {
   const currentYear = new Date().getFullYear()
 
   const nextConcert = {
-    date: "14. juni 2026",
-    venue: "Rockefeller",
-    location: "Oslo",
+    date: "22. mai 2026",
+    venue: "Kulturhuset",
+    location: "Halden",
+    ticketURL: "https://kulturhuset.hoopla.no/event/634926803"
   }
 
   return (
@@ -42,6 +44,9 @@ export function FooterSection() {
                   {nextConcert.venue}
                 </p>
                 <p className="text-foreground/70">{nextConcert.location}</p>
+                <a href={nextConcert.ticketURL} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block bg-primary text-primary-background px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] transition-colors hover:bg-primary/90">
+                  Bestill billetter
+                </a>  
               </div>
             ) : (
               <div className="bg-secondary p-6">
