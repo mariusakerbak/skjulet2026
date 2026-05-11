@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 
 import { socialLinks } from "@/lib/social"
+import { navItems } from "@/lib/nav"
 
 function SocialIcon({ href, label, path, className }) {
   return (
@@ -21,12 +22,6 @@ function SocialIcon({ href, label, path, className }) {
     </a>
   )
 }
-
-const navItems = [
-  { href: "#music", label: "Musikk" },
-  { href: "/diskografi", label: "Diskografi" },
-  { href: "#live", label: "Konserter" },
-]
 
 export function HeroSection() {
   const [imageLoaded, setImageLoaded] = useState(false)
