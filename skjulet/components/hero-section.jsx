@@ -133,30 +133,30 @@ export function HeroSection() {
           </p>
 
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            <span className="block text-balance">Kulturhuset, Halden</span>
+            <span className="block text-balance">To be announced!</span>
             <span className="block text-balance text-3xl">
-              <span className="text-primary">Fredag 22. mai,  klokka 20:00</span>
+              <span className="text-primary">Følg oss på sosiale medier for oppdateringer!</span>
             </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base font-normal leading-relaxed text-foreground/60 md:mt-8 md:text-lg">
-            Skjulet inntar Kulturhuset i Halden for en altfor forsinket lokal releasekonsert for albumet "Historier fra Sofaen". Bli med på en kveld der musikk og historier smelter sammen i en artig opplevelse!  
+            Skjulet jobber med å skape en unik konsertopplevelse som kombinerer musikk, visuell kunst og interaktivitet. Vi ønsker å invitere publikum til å bli en del av vår musikalske reise, og vi gleder oss til å dele våre kommende prosjekter med dere.  
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6 md:mt-12">
+            
+            <a
+              href="mailto:gutta@skjulet.no?subject=Booking%20forespørsel"
+              className="inline-flex items-center justify-center border border-primary bg-primary px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Booking
+            </a>
             <a
               href="https://open.spotify.com/artist/44im0D1VFjAteBS2F25MlG"
               className="inline-flex items-center justify-center border border-foreground/30 px-8 py-4 text-sm font-normal uppercase tracking-[0.2em] text-foreground transition-colors hover:border-foreground/60"
             >
              Lytt nå
             </a>
-            <a
-              href="https://kulturhuset.hoopla.no/event/634926803"
-              className="inline-flex items-center justify-center border border-primary bg-primary px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Bestill billetter (Hoopla)
-            </a>
-            
           </div>
         </div>
       </div>

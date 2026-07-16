@@ -4,12 +4,12 @@ import Link from "next/link"
 export function FooterSection() {
   const currentYear = new Date().getFullYear()
 
-  const nextConcert = {
+  /*const nextConcert = {
     date: "22. mai 2026",
     venue: "Kulturhuset",
     location: "Halden",
     ticketURL: "https://kulturhuset.hoopla.no/event/634926803"
-  }
+  }*/
 
   return (
     <footer className="border-t border-secondary bg-secondary">
