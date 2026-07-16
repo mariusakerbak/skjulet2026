@@ -147,4 +147,7 @@ _discard/
 _discard-*
 _discard/*.*
 .env.local
+
+# Claude Code personal/local settings (may contain machine-specific data or secrets)
 /.claude/worktrees
+**/.claude/settings.local.json
