@@ -4,24 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
-import { socialLinks } from "@/lib/social"
 import { navItems } from "@/lib/nav"
-
-function SocialIcon({ href, label, path, className }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={className}
-      aria-label={label}
-    >
-      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path d={path} />
-      </svg>
-    </a>
-  )
-}
+import { SocialLinks } from "@/components/social-links"
 
 export function HeroSection() {
   const [imageLoaded, setImageLoaded] = useState(false)
@@ -51,16 +35,7 @@ export function HeroSection() {
 
       <header className="relative z-10">
         <div className="flex justify-end px-6 pt-4 md:px-12 lg:px-16">
-          <ul className="flex items-center gap-4">
-            {socialLinks.map((s) => (
-              <li key={s.label}>
-                <SocialIcon
-                  {...s}
-                  className="block text-foreground/50 transition-colors hover:text-primary"
-                />
-              </li>
-            ))}
-          </ul>
+          <SocialLinks />
         </div>
 
         <nav className="flex items-center justify-between px-6 py-4 md:px-12 lg:px-16">
@@ -112,16 +87,10 @@ export function HeroSection() {
                 </li>
               ))}
             </ul>
-            <ul className="mt-8 flex items-center gap-5 border-t border-foreground/10 pt-6">
-              {socialLinks.map((s) => (
-                <li key={s.label}>
-                  <SocialIcon
-                    {...s}
-                    className="block text-foreground/50 hover:text-primary"
-                  />
-                </li>
-              ))}
-            </ul>
+            <SocialLinks
+              className="mt-8 flex items-center gap-5 border-t border-foreground/10 pt-6"
+              linkClassName="block text-foreground/50 hover:text-primary"
+            />
           </div>
         )}
       </header>
@@ -142,7 +111,7 @@ export function HeroSection() {
           <p className="mt-6 max-w-xl text-base font-normal leading-relaxed text-foreground/60 md:mt-8 md:text-lg">
             Skjulet jobber med å skape en unik konsertopplevelse som kombinerer musikk, visuell kunst og interaktivitet. Vi ønsker å invitere publikum til å bli en del av vår musikalske reise, og vi gleder oss til å dele våre kommende prosjekter med dere.  
           </p>
-
+          <SocialLinks />
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6 md:mt-12">
             
             <a

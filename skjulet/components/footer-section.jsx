@@ -1,15 +1,8 @@
-import { socialLinks } from "@/lib/social"
-import Link from "next/link"
+import { SocialLinks } from "@/components/social-links"
 
 export function FooterSection() {
   const currentYear = new Date().getFullYear()
 
-  /*const nextConcert = {
-    date: "22. mai 2026",
-    venue: "Kulturhuset",
-    location: "Halden",
-    ticketURL: "https://kulturhuset.hoopla.no/event/634926803"
-  }*/
 
   return (
     <footer className="border-t border-secondary bg-secondary">
@@ -35,26 +28,13 @@ export function FooterSection() {
             <h3 className="mb-6 text-lg font-bold text-foreground">
               Neste konsert
             </h3>
-            {nextConcert ? (
-              <div className="bg-background p-6">
-                <p className="mb-2 text-2xl font-bold text-primary">
-                  {nextConcert.date}
-                </p>
-                <p className="text-lg font-bold text-foreground">
-                  {nextConcert.venue}
-                </p>
-                <p className="text-foreground/70">{nextConcert.location}</p>
-                <a href={nextConcert.ticketURL} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block bg-primary text-primary-background px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] transition-colors hover:bg-primary/90">
-                  Bestill billetter
-                </a>  
-              </div>
-            ) : (
+      
               <div className="bg-secondary p-6">
                 <p className="text-foreground/70">
                   Ingen planlagte konserter for øyeblikket — følg med!
                 </p>
               </div>
-            )}
+           
           </div>
 
           <div>
@@ -69,28 +49,11 @@ export function FooterSection() {
               gutta@skjulet.no
             </a>
 
-            <ul className="mt-6 flex items-center gap-5">
-              {socialLinks.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-foreground/70 transition-colors hover:text-primary"
-                    aria-label={s.label}
-                  >
-                    <svg
-                      className="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d={s.path} />
-                    </svg>
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <SocialLinks
+              className="mt-6 flex items-center gap-5"
+              linkClassName="block text-foreground/70 transition-colors hover:text-primary"
+              iconClassName="h-6 w-6"
+            />
           </div>
         </div>
 
