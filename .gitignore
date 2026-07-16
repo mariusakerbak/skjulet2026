@@ -147,3 +147,4 @@ _discard/
 _discard-*
 _discard/*.*
 .env.local
+/.claude/worktrees
